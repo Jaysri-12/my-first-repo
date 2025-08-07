@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Favorite Movies</title>
+    <style>
+        .marquee {
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            background: black;
+            color: white;
+        }
+        .marquee-text {
+            display: inline-block;
+            animation: scroll 10s linear infinite;
+        }
+        @keyframes scroll {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+<div class="marquee">
+        <div class="marquee-text">Welcome to My Favorite Movies Page!</div>
+    </div>
+
+    <h2>My Favorite Movies</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Genre</th>
+            <th>Year</th>
+            <th>Rating</th>
+        </tr>
+        <tr>
+            <td>Salaar:part 1</td>
+            <td>Action</td>
+            <td>2023</td>
+            <td>9.0</td>
+        </tr>
+ <tr>
+        <td>Aarya-2</td>
+        <td>Melodrama</td>
+        <td>2004</td>
+        <td>7.5</td>
+      </tr>
+    </table>
+<h2>Favorite Actor</h2>
+    <img src="prabhas.jpg" width="100">
+
+    <h2>Salaar-Movie Trailer</h2>
+    <video width="320" controls>
+        <source src="https://timesofindia.onelink.me/efRt/ASmwebshare" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <h2>Soundtrack</h2>
+    <audio autoplay controls>
+        <source src="Blue Audio.mp4" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+</body>
+</html>
